@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get 'mails/new'
+  root to: 'mails#new'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  post '/users', to: 'mails#create'
 end
