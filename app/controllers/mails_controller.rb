@@ -3,5 +3,7 @@ class MailsController < ApplicationController
     @user = User.new
   end
 
-  def create; end
+  def create
+    redirect_to root_path, success: 'mail sent'
+  end
 end
